@@ -1,0 +1,578 @@
+html{
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+   background: #EFEFEF;
+   margin: 0px;
+   padding: 0px;
+   font-family: 'Roboto', sans-serif;
+}
+$colorGreen: #66C05D; 
+$colorWhite: #EFEFEF; 
+@mixin display {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin white {
+    color: #EFEFEF;
+}
+
+// Делаем header
+.list__header {
+ width: 100%;
+ height: 50px;
+ background: #e2e2e2;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ font-family: 'Roboto', sans-serif;
+                                     
+}
+.header__delivery, .header__pay, .header__review, .header__question, .header__contacts{
+    margin: 30px;
+    color: #333333;
+    font-size: 400;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+// Верстка верхней страницы
+.main__header {
+    // @include display();
+    width: 100%;
+    // height: 120px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.logo {
+    background: url(/img/logo.svg) no-repeat;
+    width: 80px;
+    height: 80px;
+}
+
+.main__header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+
+.main__logo {
+    color: $colorGreen;
+    font-size: 36px;
+    display: flex;
+    align-items: center;
+    margin-right: 580px;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.main__contacts{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header__button{
+    font-size: 14px;
+    font-weight: 400;
+    border: 2px solid #66C05D;
+    padding: 16px 26px;
+    border-radius: 40px;
+    margin-left: 40px;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.services{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    width: 100%;
+    height: 125px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+
+}
+.services__salon, .services__barbershop, .services__manicure, .services__pedicure, .services__massage, .services__furniture{
+    margin-right: 40px;
+    padding: 25px;
+    font-family: 'Roboto', sans-serif;
+}
+
+// Верстка  раздела "Супер кресло"
+.main__chair {
+    width: 100%;
+    height: 604px;
+    background: url(/img/Frame\ 2.svg) no-repeat;
+    background-size: 100%;
+    position: absolute;
+    left: 0px;
+    top: 249px; 
+    font-family: 'Roboto', sans-serif;
+
+}
+.main__text {
+    position: absolute;
+    top: 105px;
+    color: #e2e2e2;
+    left: 405px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.text{
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+    letter-spacing: 0em;
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    
+}
+.secondary__text {
+        margin-top: 34px;
+        margin-bottom: 73px;
+        width: 308px;
+        height: 35px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        font-family: 'Roboto', sans-serif;
+}
+.main__button {
+    width: 117px;
+    height: 15px;
+    font-size: 14px;
+    border: 2px solid #ffffff;
+    padding: 12px 26px;
+    border-radius: 40px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+// Верстка специального предложения
+.offer {
+    width: 1920px;
+    height: 954px;
+    position: absolute;
+    left: 0px;
+    top: 853px;
+    background: #EFEFEF;
+    font-family: 'Roboto', sans-serif;
+
+}
+.offer__text {
+    position: absolute;
+    width: 330px;
+    height: 29px;
+    left: 386px;
+    top: 80px;
+
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+}
+
+.spec__offer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.offer__chair {
+    height: 363px;
+    width: 255px;
+
+    border-radius: 0px;
+    background: #FFFFFF;
+    margin-right: 30px;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+
+.chair__img {
+    position: relative;
+    width: 125px;
+    height: 166px;
+    left: 65px;
+    top: 25px;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.chair__text {
+    position: relative;
+    width: 125px;
+    height: 166px;
+    left: 44px;
+    top: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+
+    text-align: center;
+
+}
+.chair__price {
+    font-family: 'Roboto', sans-serif;
+    font-size: 21px;
+    font-weight: 500;
+    line-height: 25px;
+    text-align: center;
+
+}
+.chair__button {
+    height: 25px;
+    width: 68px;
+    border: 2px solid #66C05D;
+    border-radius: 30px;
+    padding:9px 40px;
+    text-align: center;
+    background-color: #66C05D;
+    color: #FFFFFF;
+    margin-top:8px;
+    font-size:18px;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+// Верстка раздела бонуса 
+
+.offer__bonus{
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+
+}
+.offer__feedback {
+    position: absolute;
+    top: 100px;
+    left: 386px;
+    width: 540px;
+    height: 212px;
+    background-color: #66C05D;
+    font-family: 'Roboto', sans-serif;
+}
+
+// .feedback__text-but {
+// }
+
+
+.feedback__text-main {
+    @include white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    position: absolute;
+    top: 35px;
+    left: 40px;
+    margin: 0px;
+
+}
+.feedback__text-secondary {
+    width: 231px;
+    height: 40px;
+
+    @include white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    position: absolute;
+    top: 77px;
+    left: 40px;
+    margin:0px;
+}
+// .feedback__text-button {
+// }
+.form-email-input {
+    width: 225px;
+    height: 29px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    position: absolute;
+    top: 142px;
+    left: 40px;
+    margin:0px;
+    border: 2px solid $colorWhite;
+    border-radius: 30px;
+    border-color: transparent;
+    outline: 0;
+    padding-left: 8px;
+    color: #C4C4C4;
+    
+}
+.form-email-input::-webkit-input-placeholder{
+    color: #C4C4C4;
+    padding-left: 25px;
+    font-family: 'Roboto', sans-serif;
+}
+
+// Отдельная картинка письма
+.feedback__mail {
+    background: no-repeat url(/img/Group.svg);
+    height: 106.5425262451px;
+    width: 140.0000762939px;
+    position: absolute;
+    left: 355px;
+    top: 52.73px;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.offer__map {
+    position: absolute;
+    top: 100px;
+    left: 962px;
+    width: 540px;
+    height: 212px;
+    background-color: #66C05D;
+    font-family: 'Roboto', sans-serif;
+}
+.map__text-but {
+    position: absolute;
+    @include white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 0;
+
+}
+.map__text-main {
+    top: 35px;
+    left: 40px;
+    width: 250px;
+    height: 17px;
+    position: absolute;
+    @include white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 0;
+
+
+}
+.map__text-secondary {
+    top: 77px;
+    left: 40px;
+    width: 172px;
+    height: 40px;
+    position: absolute;
+    @include white;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+.feedback__map-button {
+    width: 170px;
+    height: 25px;
+    top: 142px;
+    position: absolute;
+    left: 40px;
+    background: #66C05D;
+    border: 2px solid #FFFFFF;
+    border-radius: 30px;
+    text-align: center;
+    margin-top: 2px;
+    padding-top: 6px;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+// Верстка footer
+.list__footer{ 
+    position: relative;
+    width: 100%;
+    height: 184px;
+    left: 0px;
+    top: 1574px;
+    background: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+}
+
+.footer__address {
+    width: 228px;
+    height: 16px;
+    position: absolute;
+    left: 846px;
+    top: 52px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+
+}
+
+.footer__number {
+    position: absolute;
+    top: 50px;
+    left: 1178px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;  
+}
+.footer__contacts-button {
+    position: absolute;
+    top: 40px;
+    right: 405px;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Roboto';
+    border: 2px solid #66C05D;
+    padding: 16px 26px;
+    border-radius: 40px;
+    margin-left: 40px;
+    font-family: 'Roboto', sans-serif;
+}
+
+// Верстаем кнопки перехода по соц сетям
+.footer__buttons {  
+    width: 45px;
+    height: 45px;
+    position: absolute;
+}
+.footer__youtube {
+    width: 45px;
+    height: 45px;
+    top: 40px;
+    left: 405px;
+    position: absolute;
+    background: url(/img/Ellipse.svg) no-repeat;
+    z-index: 2;
+}
+.footer__vkontakte {
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    top: 40px;
+    left: 465px;
+    background: url(/img/Ellipse.svg) no-repeat;
+    z-index: 2;
+}
+.footer__facebook {
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    top: 40px;
+    left: 530px;
+    background: url(/img/Ellipse.svg) no-repeat;
+    z-index: 2;
+}
+.footer__instagram {
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    top: 40px;
+    left: 595px;
+    background: url(/img/Ellipse.svg) no-repeat;
+    z-index: 2;
+}
+// Я знаю, что можно было использовать миксины, но я оч сильно торопился
+
+.youtube {
+    margin-top: 15px;
+    margin-left: 12px;
+}
+.vkontakte {
+    margin-top: 15px;
+    margin-left: 8px;
+}
+.facebook {
+    margin-top: 13px;
+    margin-left: 16px;
+}
+.instagram {
+    margin-top: 11px;
+    margin-left: 11px;
+}
+// Политика конфиденциальности 
+.footer__politics {
+    height: 64px;
+    width: 100%;
+    position: absolute;
+
+    top: 120px;
+    background: #EFEFEF;
+    margin: 0px;
+}
+.rules {
+    height: 14px;
+    width: 584px;
+    position: absolute;
+    top: 25px;
+    left: 405px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color:#828282;
+    
+}
+.politics {
+    height: 14px;
+    width: 181px;
+    position: absolute;
+    top: 25px;
+    right: 405px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color:#828282;
+}
+
+
+
